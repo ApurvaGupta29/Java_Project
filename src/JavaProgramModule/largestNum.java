@@ -4,17 +4,18 @@ public class largestNum {
 
 	public static void main(String[] args) {
 		// largest number of an array
-		int[] arr = { 12, 45, 2, 41, 31, 10, 8, 6, 4 };
-		// System.out.println(arr.length);
-		int largeNum = arr[0];
+		int[] numbers = { 12, 45, 2, 41, 31, 10, 8, 6, 4 };
+		
+		int highest=0;
 
-		for (int i = 0; i < arr.length; i++) {
-			// System.out.println(arr[i]);
-			if (arr[i] > largeNum) {
-				largeNum = arr[i];
+		for (int i = 0; i < numbers.length; i++) {
+			int current = numbers[i];
+			
+			if (current > highest) {
+				highest = current;
 			}
 		}
-		System.out.println(largeNum);
+		System.out.println(highest);
 	}
 
 }
