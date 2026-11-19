@@ -17,7 +17,7 @@ public class ArrayAverage {
 		
 		System.out.println(sum);
 		double average= sum/num.length;
-		System.out.println(average);
+		System.out.println(average); 
 
 	}
 
